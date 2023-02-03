@@ -535,12 +535,12 @@ class NoticeHTML extends Component {
 const didomiConfig = {
   app: {
     apiKey: '<Your API key>',
-    notice: {
-      content: {
-        html: {
-          en: element => {
-            render(<NoticeHTML shouldDisplayMoreText={false} />, element)
-          }
+  },
+  notice: {
+    content: {
+      html: {
+        en: element => {
+          render(<NoticeHTML shouldDisplayMoreText={false} />, element)
         }
       }
     }
@@ -561,12 +561,12 @@ You can do everything through HTML:
   ```js
   const didomiConfig = {
   app: {
-    apiKey: '<Your API key>',
-    notice: {
-      content: {
-        html: {
-          en: '<div>Custom Notice</div>'
-        }
+    apiKey: '<Your API key>'
+  },
+  notice: {
+    content: {
+      html: {
+        en: '<div>Custom Notice</div>'
       }
     }
   }
